@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Does Your Tribe or Integrity Come First? — The Weber County Hive</title>
+<meta name="description" content="In a world of Gadiantons, doing the right thing means dropping the tribe.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F3ECE0;--paper-dim:#E9E0D0;--void:#181210;--maroon:#7A5A1E;--maroon-dim:#9A7428;--ink:#211714;--ink-soft:#4A3B35;--line:#C9BBA4;--gold:#B4863C;--green:#3F6B3F;--max:900px;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Source Sans 3',sans-serif;font-size:17px;line-height:1.62;}
+a{color:var(--maroon);} a:hover{color:var(--maroon-dim);}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;margin:0;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+.mono{font-family:'IBM Plex Mono',monospace;}
+.topbar{background:var(--void);color:var(--paper-dim);padding:12px 24px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.topbar a{color:var(--paper-dim);text-decoration:none;opacity:.85;} .topbar a:hover{opacity:1;color:#fff;}
+header.masthead{padding:64px 24px 34px;border-bottom:3px solid var(--void);max-width:var(--max);margin:0 auto;}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--maroon);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--maroon);display:inline-block;}
+h1.title{font-size:clamp(32px,5.6vw,54px);line-height:1.06;max-width:760px;}
+h1.title em{font-style:italic;color:var(--maroon);}
+.dek{font-size:19px;color:var(--ink-soft);max-width:680px;margin-top:18px;line-height:1.5;}
+.dates{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin-top:18px;}
+.dates .upd{color:#C0392B;font-weight:600;}
+.mhead{display:flex;gap:26px;align-items:center;}
+.mark{width:112px;height:112px;flex:none;}
+@media(max-width:640px){.mhead{flex-direction:column;align-items:flex-start;gap:14px;}.mark{width:76px;height:76px;}}
+section{max-width:var(--max);margin:0 auto;padding:30px 24px 0;}
+section h2{font-size:26px;margin-bottom:10px;}
+.plain{background:#fff;border-left:4px solid var(--gold);padding:12px 16px;margin:10px 0 16px;font-size:16px;}
+.plain b{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--gold);display:block;}
+.box{background:#fff;border:1px solid var(--line);padding:18px 20px;margin:12px 0;}
+.box h3{font-size:19px;margin-bottom:6px;}
+.box ul,.box ol{margin:6px 0 0;padding-left:20px;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.site-links{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:6px;}
+footer.site-footer{background:var(--void);color:var(--paper-dim);padding:36px 24px 46px;margin-top:56px;}
+footer.site-footer .wrap{display:flex;flex-direction:column;gap:12px;}
+footer.site-footer h3{color:#fff;font-size:20px;}
+footer.site-footer p{color:#B8A899;font-size:14px;max-width:600px;margin:0;}
+footer.site-footer a{color:var(--gold);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:12.5px;}
+footer.site-footer a:hover{color:#fff;}
+@media(max-width:640px){header.masthead{padding:44px 18px 28px;} section{padding:24px 18px 0;} .two{grid-template-columns:1fr;}}
+
+article.essay{max-width:700px;margin:0 auto;padding:10px 24px 0;font-size:18.5px;line-height:1.72;}
+article.essay p{margin:0 0 1.05em;}
+article.essay h2{font-size:25px;margin:1.6em 0 .6em;}
+article.essay .lead{font-family:'Fraunces',serif;font-style:italic;font-size:22px;color:var(--maroon);}
+article.essay .pull{font-family:'Fraunces',serif;font-size:27px;font-weight:600;border-left:4px solid var(--gold);padding:6px 0 6px 18px;margin:1.2em 0;}
+article.essay ul{margin:0 0 1.05em;padding-left:22px;}
+.math{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);padding:14px 18px;font-family:'IBM Plex Mono',monospace;font-size:14.5px;line-height:1.8;margin:0 0 1.05em;}
+.math div:last-child{border-top:1px solid var(--line);margin-top:4px;padding-top:4px;font-weight:600;}
+.byline{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink-soft);margin-top:14px;}
+.pbadge{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;background:var(--void);color:#D9B868;margin-bottom:14px;}
+table.chk{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:15px;}
+table.chk th{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;text-align:left;background:var(--paper-dim);padding:9px 11px;}
+table.chk td{padding:10px 11px;border-top:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere;}
+td.ok{color:var(--green);font-weight:600;} td.fix{color:var(--maroon);font-weight:600;} td.cut{color:#9B2C2C;font-weight:600;}
+@media(max-width:640px){article.essay{padding:6px 18px 0;font-size:17.5px;} table.chk tr,table.chk td{display:block;} table.chk th{display:none;} table.chk tr{border-top:1px solid var(--line);} table.chk td{border-top:none;padding:6px 11px;} table.chk td[data-l]::before{content:attr(data-l);display:block;font:600 10.5px/1.4 'IBM Plex Mono',monospace;text-transform:uppercase;color:var(--ink-soft);}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Letters &amp; Essays to the Collective · The Weber County Hive + Utah Hive Politics</span><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener">webercountyhive.substack.com ↗</a></div>
+<header class="masthead">
+  <div class="pbadge">From the publisher · Personal essay</div>
+  <div class="eyebrow">Choosing sides</div>
+  <h1 class="title">Does Your Tribe or Integrity Come First?</h1>
+  <p class="dek">In a world of Gadiantons, doing the right thing means dropping the tribe.</p>
+  <div class="byline">By Shauna Miller · 2 min read</div>
+  <div class="dates">First published on The Weber County Hive Substack, Aug 29, 2026 · Posted here Sep 25, 2026 · Last updated <span class="upd">Sep 25, 2026</span></div>
+</header>
+<section><p class="plain"><b>IN PLAIN WORDS</b>This is a personal essay. The views are the writer&rsquo;s own and are kept here, apart from the Hive&rsquo;s records-only reporting. Its factual statements were checked the same way reader pieces are: 3 checked, 1 corrected, 0 removed. Every check and change is listed at the end.</p></section>
+<article class="essay"><p>I grew up on the Tennis Shoes Among the Nephites series. Like thousands of kids raised in Utah, I devoured Chris Heimerdinger’s time-travel adventures, tracking Jim, Jenny, and Garth as they ducked spears in ancient jungles and faced off against corrupt cabals.</p><p>The books were fun, but the lesson underneath was heavy: Gadianton robbers weren’t just guys hiding in caves with secret handshakes.</p><p>They were a systemic disease. They were leaders who used righteous-sounding language, leveraged backroom influence, and relied on a docile, trusting public to look the other way while they consolidated power and wealth. We were taught to recognize that pattern, fear it, and resist it at all costs.</p><p>Eventually, life took me down a path where I stepped away from the LDS faith. But stepping outside the culture did something unexpected: it gave me a vantage point to see the very mechanics I’d been warned about as a child playing out in broad daylight across Utah’s political landscape.</p><p>The deepest irony of living in a culture saturated with Book of Mormon warnings about societal decay is watching the exact same decay tolerated—and often defended—by the people holding the text.</p><p>In modern state and local politics, we see the classic blueprint:</p><ul><li>Closed-door deals and cozy insider networks rationalized under the banner of “protecting our values.”</li><li>Politicians using pious rhetoric as a bulletproof vest against basic accountability.</li><li>Citizens giving bad actors a permanent free pass simply because the politician shares their party label, their neighborhood, or their faith.</li></ul><p>The Book of Mormon itself explicitly warns that the downfall of a community rarely comes from external enemies—it comes from the quiet, internal decay of ethics when good people decide that loyalty to the team matters more than loyalty to the truth.</p><p>The book’s own narrators — Mormon, who compiled it, and his son Moroni, who finished it — practically break the fourth wall to warn future readers that they would become blind to the very corruption growing in their own backyards.</p><p>When you call out this kind of tribalism, the knee-jerk reaction from defenders is predictable. They want to attack the messenger: “They’re bitter,” or “They left, so they just don’t get it.”</p><p>But you don’t have to believe in the theology to recognize structural hypocrisy. In fact, if leaving taught me anything, it’s that integrity doesn’t belong to an institution or a party. Real integrity is the willingness to look at “your side”—the candidate you voted for, the developer in your circle, or the official you know—and say: This is wrong.</p><p>If we only resist corruption when it wears the other side’s jersey, we aren’t standing for principle. We’re just playing for a team.</p><p>It’s easy to read stories about heroically standing against ancient cabals. It’s a lot harder to stand up in a county commission meeting, call out a bad land deal, or refuse to vote for a corrupt local politician who quotes your favorite scriptures on Sunday and sells out your community on Tuesday.</p><p>In a world full of Gadiantons—and a culture full of people blind to them—doing the right thing means having the courage to see clearly, speak plainly, and drop the tribe.</p></article>
+<section>
+  <h2>What we checked</h2>
+  <table class="chk"><tr><th>Statement</th><th>Result</th><th>Record</th></tr><tr><td data-l="Statement">The Tennis Shoes series is by Chris Heimerdinger; its main characters are Jim Hawkins, his sister Jenny and Garth Plimpton</td><td data-l="Result" class="ok">Confirmed</td><td data-l="Record"><a href="https://en.wikipedia.org/wiki/Tennis_Shoes_Adventure_Series" target="_blank" rel="noopener">Tennis Shoes Adventure Series (overview)</a></td></tr><tr><td data-l="Statement">The Book of Mormon warns that a nation upholding secret combinations “to get power and gain” will be destroyed</td><td data-l="Result" class="ok">Confirmed</td><td data-l="Record"><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/8?lang=eng" target="_blank" rel="noopener">Ether 8:22–24</a></td></tr><tr><td data-l="Statement">The narrator who addresses future readers directly</td><td data-l="Result" class="fix">Corrected: the best-known direct warnings (Ether 8, Mormon 8:35) are written by Moroni, Mormon’s son</td><td data-l="Record"><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/8?lang=eng" target="_blank" rel="noopener">Ether 8:20–26; Mormon 8:35</a></td></tr></table>
+</section>
+<section>
+  <h2>Change log</h2>
+  <div class="box"><p style="margin:0 0 6px;"><strong>Sep 25, 2026</strong> — Posted to the Collective with these changes from the Aug 29, 2026 Substack version:</p><ul><li>Named both narrators, Mormon and his son Moroni; the passages that speak directly to future readers are Moroni’s.</li><li>Typo fixed: “a institution” to “an institution.”</li></ul></div>
+  
+  <p><a href="index.html">← All letters &amp; essays</a> · <a href="how-we-check.html">How we check</a></p>
+</section>
+<footer class="site-footer"><div class="wrap">
+  <h3>Letters &amp; Essays to the Collective</h3><p style="color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;">From The Weber County Hive and Utah Hive Politics</p>
+  <p>Reader letters and essays about Utah government, money and land. The views are the writers&rsquo; own. Factual statements are checked against public records before publication, and each check is listed on the piece.</p>
+  <div class="site-links"><a href="index.html">All letters &amp; essays</a><a href="how-to-send.html">How to send one</a><a href="how-we-check.html">How we check</a></div>
+  <p style="margin-top:6px;">Across the Hive:</p>
+  <div class="site-links"><a href="https://weber-county-hive.github.io/-weber-county-hive-index/">Hive index</a><a href="https://weber-county-hive.github.io/candidates2026/">Candidates 2026</a><a href="https://weber-county-hive.github.io/Bill-Tracker/">Bill Tracker</a><a href="https://weber-county-hive.github.io/pac/">PACs</a><a href="https://weber-county-hive.github.io/Transparency/">Transparency</a><a href="https://weber-county-hive.github.io/Unelected-Power/">Unelected Power</a><a href="https://weber-county-hive.github.io/utah-senators/">Utah Senators</a><a href="https://weber-county-hive.github.io/audits/">Audits</a><a href="https://weber-county-hive.github.io/committees/">Committees</a><a href="https://weber-county-hive.github.io/bait-and-switch/">Bait and Switch</a><a href="https://weber-county-hive.github.io/public-lands/">Public Lands</a><a href="https://weber-county-hive.github.io/Education/">Education</a></div>
+</div></footer>
+<script src="collective-data.js?v=2"></script>
+<script>
+document.querySelectorAll('[data-site]').forEach(el=>{el.textContent=SITE[el.dataset.site];});
+
+</script>
+</body>
+</html>

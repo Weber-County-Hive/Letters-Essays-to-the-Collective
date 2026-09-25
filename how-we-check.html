@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How We Check — The Weber County Hive</title>
+<meta name="description" content="How the Weber County Hive checks reader letters and essays against public records before publishing them.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F3ECE0;--paper-dim:#E9E0D0;--void:#181210;--maroon:#7A5A1E;--maroon-dim:#9A7428;--ink:#211714;--ink-soft:#4A3B35;--line:#C9BBA4;--gold:#B4863C;--green:#3F6B3F;--max:900px;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Source Sans 3',sans-serif;font-size:17px;line-height:1.62;}
+a{color:var(--maroon);} a:hover{color:var(--maroon-dim);}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;margin:0;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+.mono{font-family:'IBM Plex Mono',monospace;}
+.topbar{background:var(--void);color:var(--paper-dim);padding:12px 24px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.topbar a{color:var(--paper-dim);text-decoration:none;opacity:.85;} .topbar a:hover{opacity:1;color:#fff;}
+header.masthead{padding:64px 24px 34px;border-bottom:3px solid var(--void);max-width:var(--max);margin:0 auto;}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--maroon);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--maroon);display:inline-block;}
+h1.title{font-size:clamp(32px,5.6vw,54px);line-height:1.06;max-width:760px;}
+h1.title em{font-style:italic;color:var(--maroon);}
+.dek{font-size:19px;color:var(--ink-soft);max-width:680px;margin-top:18px;line-height:1.5;}
+.dates{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin-top:18px;}
+.dates .upd{color:#C0392B;font-weight:600;}
+.mhead{display:flex;gap:26px;align-items:center;}
+.mark{width:112px;height:112px;flex:none;}
+@media(max-width:640px){.mhead{flex-direction:column;align-items:flex-start;gap:14px;}.mark{width:76px;height:76px;}}
+section{max-width:var(--max);margin:0 auto;padding:30px 24px 0;}
+section h2{font-size:26px;margin-bottom:10px;}
+.plain{background:#fff;border-left:4px solid var(--gold);padding:12px 16px;margin:10px 0 16px;font-size:16px;}
+.plain b{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--gold);display:block;}
+.box{background:#fff;border:1px solid var(--line);padding:18px 20px;margin:12px 0;}
+.box h3{font-size:19px;margin-bottom:6px;}
+.box ul,.box ol{margin:6px 0 0;padding-left:20px;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.site-links{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:6px;}
+footer.site-footer{background:var(--void);color:var(--paper-dim);padding:36px 24px 46px;margin-top:56px;}
+footer.site-footer .wrap{display:flex;flex-direction:column;gap:12px;}
+footer.site-footer h3{color:#fff;font-size:20px;}
+footer.site-footer p{color:#B8A899;font-size:14px;max-width:600px;margin:0;}
+footer.site-footer a{color:var(--gold);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:12.5px;}
+footer.site-footer a:hover{color:#fff;}
+@media(max-width:640px){header.masthead{padding:44px 18px 28px;} section{padding:24px 18px 0;} .two{grid-template-columns:1fr;}}
+
+table.sort{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:15.5px;}
+table.sort th{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;text-align:left;background:var(--paper-dim);padding:10px 12px;}
+table.sort td{padding:11px 12px;border-top:1px solid var(--line);vertical-align:top;}
+@media(max-width:640px){table.sort tr,table.sort td{display:block;} table.sort th{display:none;} table.sort td[data-l]::before{content:attr(data-l);display:block;font:600 11px/1.4 'IBM Plex Mono',monospace;text-transform:uppercase;color:var(--ink-soft);} table.sort tr{border-top:1px solid var(--line);} table.sort td{border-top:none;}}
+.log{font-family:'IBM Plex Mono',monospace;font-size:13px;}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Letters &amp; Essays to the Collective · The Weber County Hive + Utah Hive Politics</span><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener">webercountyhive.substack.com ↗</a></div>
+<header class="masthead">
+  <div class="eyebrow">Standards</div>
+  <h1 class="title">How We <em>Check</em></h1>
+  <p class="dek">The same standard the Hive&rsquo;s case files use: public records only, linked where they&rsquo;re used, and nothing about a named person that a record doesn&rsquo;t support.</p>
+  <div class="dates">Page published Sep 25, 2026 · Last updated <span class="upd">Sep 25, 2026</span></div>
+</header>
+<section>
+  <p class="plain"><b>IN PLAIN WORDS</b>We leave opinions alone. We check facts. Confirmed facts get a link. Facts about a person or group that we can&rsquo;t confirm go back to the writer or come out. Every piece lists how many facts were checked and how many came out.</p>
+  <h2>How each statement is handled</h2>
+  <table class="sort">
+    <tr><th>What the piece says</th><th>Example</th><th>What we do</th></tr>
+    <tr><td data-l="What the piece says">Opinion</td><td data-l="Example">&ldquo;The council should have waited for public input.&rdquo;</td><td data-l="What we do">Left as written. The label on every piece says the views are the writer&rsquo;s.</td></tr>
+    <tr><td data-l="What the piece says">A fact we can confirm</td><td data-l="Example">&ldquo;The commission approved it 2&ndash;1.&rdquo;</td><td data-l="What we do">Kept, with a link to the record.</td></tr>
+    <tr><td data-l="What the piece says">An unconfirmed fact about a named person or group</td><td data-l="Example">&ldquo;The developer paid the commissioner.&rdquo;</td><td data-l="What we do">Sent back for a source, or removed. Never published with a &ldquo;couldn&rsquo;t find it&rdquo; note.</td></tr>
+    <tr><td data-l="What the piece says">An unconfirmed observation that isn&rsquo;t about anyone&rsquo;s conduct</td><td data-l="Example">&ldquo;Traffic on my street has doubled.&rdquo;</td><td data-l="What we do">Kept only if framed as the writer&rsquo;s own observation (&ldquo;I&rsquo;ve seen&hellip;&rdquo;); otherwise removed.</td></tr>
+    <tr><td data-l="What the piece says">A fact the records contradict</td><td data-l="Example">A wrong vote count or date</td><td data-l="What we do">Sent back to fix. If it isn&rsquo;t fixed, the piece doesn&rsquo;t run.</td></tr>
+  </table>
+  <div class="box"><h3>What counts as a record</h3><ul>
+    <li>Government records posted publicly: meeting agendas, minutes and recordings; budgets; bills, compare documents and vote pages; disclosure and campaign finance filings; business registrations; court dockets</li>
+    <li>News reports, cited by name and date (for what the report says, not as proof beyond it)</li>
+    <li>The group&rsquo;s or person&rsquo;s own public statements and websites</li>
+  </ul><p style="margin:8px 0 0;">We don&rsquo;t file records requests to check a piece; if the record isn&rsquo;t already public, the statement is treated as unconfirmed.</p></div>
+  <div class="box"><h3>What every published piece shows</h3><ul>
+    <li>Letter or essay, writer&rsquo;s name and city</li>
+    <li>Published date, and an updated date if anything changed</li>
+    <li>How many factual statements were checked, and how many were removed or sent back</li>
+    <li>Links to the records used</li>
+    <li>Any tie the writer disclosed to a group involved in the subject</li>
+    <li>A change log at the bottom listing every correction, with its date</li>
+  </ul></div>
+  <div class="box"><h3>Corrections</h3><p style="margin:0;">If a published piece turns out to contain an error, it&rsquo;s corrected in place, the updated date changes, and the change log says what changed and when. Nothing is quietly edited.</p></div>
+</section>
+<section>
+  <h2>Change log for this page</h2>
+  <div class="box log">Sep 25, 2026 — Page published.</div>
+</section>
+
+<footer class="site-footer"><div class="wrap">
+  <h3>Letters &amp; Essays to the Collective</h3><p style="color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;">From The Weber County Hive and Utah Hive Politics</p>
+  <p>Reader letters and essays about Utah government, money and land. The views are the writers&rsquo; own. Factual statements are checked against public records before publication, and each check is listed on the piece.</p>
+  <div class="site-links"><a href="index.html">All letters &amp; essays</a><a href="how-to-send.html">How to send one</a><a href="how-we-check.html">How we check</a></div>
+  <p style="margin-top:6px;">Across the Hive:</p>
+  <div class="site-links"><a href="https://weber-county-hive.github.io/-weber-county-hive-index/">Hive index</a><a href="https://weber-county-hive.github.io/candidates2026/">Candidates 2026</a><a href="https://weber-county-hive.github.io/Bill-Tracker/">Bill Tracker</a><a href="https://weber-county-hive.github.io/pac/">PACs</a><a href="https://weber-county-hive.github.io/Transparency/">Transparency</a><a href="https://weber-county-hive.github.io/Unelected-Power/">Unelected Power</a><a href="https://weber-county-hive.github.io/utah-senators/">Utah Senators</a><a href="https://weber-county-hive.github.io/audits/">Audits</a><a href="https://weber-county-hive.github.io/committees/">Committees</a><a href="https://weber-county-hive.github.io/bait-and-switch/">Bait and Switch</a><a href="https://weber-county-hive.github.io/public-lands/">Public Lands</a><a href="https://weber-county-hive.github.io/Education/">Education</a></div>
+</div></footer>
+<script src="collective-data.js?v=2"></script>
+<script>
+document.querySelectorAll('[data-site]').forEach(el=>{el.textContent=SITE[el.dataset.site];});
+
+</script>
+</body>
+</html>

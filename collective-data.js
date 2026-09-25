@@ -35,31 +35,12 @@
 const SITE = {
   name: "Letters & Essays to the Collective",
   pagePublished: "Sep 25, 2026",
-  pageUpdated: "Oct 2, 2026",
+  pageUpdated: "Sep 25, 2026",
   // How readers send a piece. Change this one line if the address changes.
   submitHow: "Reply to any Weber County Hive or Utah Hive Politics newsletter email with your letter or essay in the body (no attachments), and put “Letter to the Collective” or “Essay to the Collective” in the subject line."
 };
 
 const PIECES = [
-  {
-    "id": "E-2026-004",
-    "type": "essay",
-    "from": "publisher",
-    "title": "Red Rover",
-    "writer": "Shauna Miller",
-    "city": "",
-    "topic": "Choosing sides",
-    "summary": "Two lines of kids, arms locked so tight your fingers went white. What the COVID years cost, and why neither team deserves our locked arms.",
-    "published": "Oct 2, 2026",
-    "updated": "Oct 2, 2026",
-    "firstRan": "Oct 2, 2026",
-    "minutes": 10,
-    "checked": 8,
-    "corrected": 4,
-    "removed": 0,
-    "related": [],
-    "link": "E-2026-004.html"
-  },
   {
     "id": "E-2026-003",
     "type": "essay",
