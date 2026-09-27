@@ -10,7 +10,7 @@
 // checked:     how many factual statements were checked against public records
 // corrected:   how many factual statements were corrected to match the record
 // removed:     how many factual statements were cut or sent back because no record was found
-// from:        "reader" or "publisher" (the publisher's own essays get the "From the publisher" badge)
+// from:        "reader", "candidate" or "publisher" (the publisher's own essays get the "From the publisher" badge; candidate letters get "From a candidate")
 // minutes:     reading time in minutes
 // firstRan:    date it first ran elsewhere (e.g. on Substack), or ""
 // related:     optional links to Hive case files the piece discusses
@@ -41,6 +41,44 @@ const SITE = {
 };
 
 const PIECES = [
+  {
+    "id": "L-2026-002",
+    "type": "letter",
+    "from": "candidate",
+    "title": "My Updated Disclosure",
+    "writer": "Jami Hewlett",
+    "city": "Heber City",
+    "topic": "Wasatch County Council",
+    "summary": "A write-in candidate for Seat A explains her updated conflict-of-interest form and her inherited interest in Twelve Point Muley LLC.",
+    "published": "Sep 27, 2026",
+    "updated": "Sep 27, 2026",
+    "firstRan": "",
+    "minutes": 2,
+    "checked": 3,
+    "corrected": 0,
+    "removed": 0,
+    "related": [{ "title": "Seat A case file", "link": "https://weber-county-hive.github.io/candidates2026/rachel-kahler-wasatch-seat-a.html" }],
+    "link": "L-2026-002.html"
+  },
+  {
+    "id": "L-2026-001",
+    "type": "letter",
+    "from": "candidate",
+    "title": "Why I'm Running for Seat A",
+    "writer": "Rachel Kahler",
+    "city": "Heber City",
+    "topic": "Wasatch County Council",
+    "summary": "The Republican nominee for Seat A introduces her campaign, her Heber City Council record, and her view of her CAMS role.",
+    "published": "Sep 27, 2026",
+    "updated": "Sep 27, 2026",
+    "firstRan": "",
+    "minutes": 4,
+    "checked": 3,
+    "corrected": 0,
+    "removed": 0,
+    "related": [{ "title": "Seat A case file", "link": "https://weber-county-hive.github.io/candidates2026/rachel-kahler-wasatch-seat-a.html" }],
+    "link": "L-2026-001.html"
+  },
   {
     "id": "E-2026-004",
     "type": "essay",
