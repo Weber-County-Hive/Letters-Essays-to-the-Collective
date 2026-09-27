@@ -67,6 +67,7 @@ footer.site-footer a:hover{color:#fff;}
 .badge{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;margin-top:10px;align-self:flex-start;}
 .badge.pub{background:var(--void);color:#D9B868;}
 .badge.rdr{background:var(--paper-dim);color:var(--ink-soft);}
+.badge.cand{background:#fff;color:var(--maroon);border:1px solid var(--maroon);}
 .theme{color:var(--maroon);font-weight:600;}
 .empty{background:#fff;border:1px dashed var(--line);padding:26px;text-align:center;color:var(--ink-soft);margin-top:18px;}
 .empty h3{color:var(--ink);font-size:21px;margin-bottom:6px;}
@@ -82,7 +83,7 @@ footer.site-footer a:hover{color:#fff;}
 </header>
 
 <section>
-  <p class="plain"><b>IN PLAIN WORDS</b>Letters are short (up to 400 words). Essays are longer (up to 1,500). Both are opinion. Pieces marked <strong>From the publisher</strong> are Shauna&rsquo;s own personal essays, kept here so they stay separate from the Hive&rsquo;s neutral, records-only reporting. Anything stated as a fact has been checked against a public record and linked, or it was taken out before publication. Each piece lists what was checked.</p>
+  <p class="plain"><b>IN PLAIN WORDS</b>Letters are short (up to 400 words). Essays are longer (up to 1,500). Both are opinion. Pieces marked <strong>From the publisher</strong> are Shauna&rsquo;s own personal essays, kept here so they stay separate from the Hive&rsquo;s neutral, records-only reporting. Anything stated as a fact has been checked against a public record and linked, or it was taken out before publication. Each piece lists what was checked. Letters marked <strong>From a candidate</strong> are published in full as the candidate&rsquo;s own words; statements about their own record are marked checked or not yet checked.</p>
   <div class="bar">
     <div class="tabs" role="tablist">
       <button class="on" data-type="">All</button><button data-type="publisher">From the publisher</button><button data-type="letter">Letters</button><button data-type="essay">Essays</button>
@@ -121,7 +122,7 @@ function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','
 function card(p){
   const dl=p.updated&&p.updated!==p.published?`Published ${esc(p.published)} <span class="upd">· Updated ${esc(p.updated)}</span>`:`Published ${esc(p.published)}`;
   const chk=`${p.checked||0} fact${(p.checked||0)===1?'':'s'} checked · ${p.corrected||0} corrected · ${p.removed||0} removed`;
-  return `<a class="card ${p.type==='essay'?'essay':''}" href="${esc(p.link)}"><div class="row"><span class="kind">${p.type==='essay'?'Essay':'Letter'}${p.minutes?' · '+p.minutes+' min read':''}</span><span class="topic theme">${esc(p.topic)}</span></div><span class="badge ${p.from==='publisher'?'pub':'rdr'}">${p.from==='publisher'?'From the publisher':'From a reader'}</span><h2>${esc(p.title)}</h2><div class="by">${esc(p.writer)}${p.city?', '+esc(p.city):''}</div><p>${esc(p.summary)}</p><div class="chk">✓ ${chk}</div><div class="meta">${dl}</div></a>`;
+  return `<a class="card ${p.type==='essay'?'essay':''}" href="${esc(p.link)}"><div class="row"><span class="kind">${p.type==='essay'?'Essay':'Letter'}${p.minutes?' · '+p.minutes+' min read':''}</span><span class="topic theme">${esc(p.topic)}</span></div><span class="badge ${p.from==='publisher'?'pub':p.from==='candidate'?'cand':'rdr'}">${p.from==='publisher'?'From the publisher':p.from==='candidate'?'From a candidate':'From a reader'}</span><h2>${esc(p.title)}</h2><div class="by">${esc(p.writer)}${p.city?', '+esc(p.city):''}</div><p>${esc(p.summary)}</p><div class="chk">✓ ${chk}</div><div class="meta">${dl}</div></a>`;
 }
 function render(){
   const s=q.value.trim().toLowerCase();
