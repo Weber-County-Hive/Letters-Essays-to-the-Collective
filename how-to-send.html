@@ -43,15 +43,60 @@ footer.site-footer p{color:#B8A899;font-size:14px;max-width:600px;margin:0;}
 footer.site-footer a{color:var(--gold);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:12.5px;}
 footer.site-footer a:hover{color:#fff;}
 @media(max-width:640px){header.masthead{padding:44px 18px 28px;} section{padding:24px 18px 0;} .two{grid-template-columns:1fr;}}
+.hbx-top{margin:0}
+.hb-bar{background:#0d0b0a;border-bottom:1px solid #3a2f1c;padding:10px 20px}
+.hb-bar a{display:flex;align-items:center;gap:12px;max-width:1100px;margin:0 auto;text-decoration:none}
+.hb-bar img{width:52px;height:52px;border-radius:4px;display:block;flex:none}
+.hb-name{font-family:'Cinzel','Trajan Pro',Georgia,serif;color:#d4af37;font-size:16px;letter-spacing:.14em;text-transform:uppercase;line-height:1.2;display:block}
+.hb-sub{font-family:Georgia,serif;font-style:italic;color:#b8956a;font-size:12.5px;display:block;margin-top:2px}
+.hb-line-top{font-family:Georgia,serif;color:#e8d9b5;font-size:12.5px;display:block;margin-top:3px;line-height:1.4}
+.hbx-slim{background:#0e2438;color:#dbe7f0;font:600 14px/1.4 Arial,sans-serif;padding:7px 20px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.hbx-slim a{color:#F3E3B3;text-decoration:underline}
+.hb-foot{background:#0d0b0a;color:#b8956a;text-align:center;padding:26px 20px 30px;font-family:Georgia,serif;line-height:1.5}
+.hb-foot img{width:52px;height:52px;display:block;margin:0 auto 10px}
+.hb-foot .hb-name,.hb-foot .hb-sub{display:block}
+.hb-foot .hb-tag{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a7650;margin-top:8px;display:block}
+.hb-line{max-width:720px;margin:14px auto 0;color:#e8d9b5;font-size:15.5px;line-height:1.5}
+.hb-tips{margin:16px 0 4px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.hb-btn{display:inline-block;border:2px solid #d4af37;background:#d4af37;color:#0d0b0a!important;font:700 15px Georgia,serif;padding:10px 18px;border-radius:6px;text-decoration:none!important}
+.hb-btn2{background:transparent;color:#d4af37!important}
+.hb-small{font-size:12.5px;color:#8a7650;margin:6px 0 0}
+.hb-small a{color:#d4af37;text-decoration:underline}
+.hb-foot p{max-width:720px;margin-left:auto!important;margin-right:auto!important}
+.hbx-tools{max-width:980px;margin:14px auto 4px;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;font-family:Arial,sans-serif;position:relative;z-index:2}
+.hbx-tool{display:inline-block;font:700 15px Arial,sans-serif;color:#13233F!important;background:#fff;border:1px solid #c8cfd6;border-radius:6px;padding:9px 13px;text-decoration:none!important;cursor:pointer;line-height:1.2}
+.hbx-tool:hover{border-color:#13233F}.hbx-cnchip b{color:#1f5f9e;font-family:ui-monospace,Menlo,monospace}
+.hbx-jump{flex-basis:100%;order:5;border:1px solid #c8cfd6;border-radius:6px;background:#fff;color:#13233F}.hbx-jump summary{cursor:pointer;padding:9px 13px;font:700 15px Arial,sans-serif}
+.hbx-jump ol{margin:0;padding:4px 16px 12px 36px}.hbx-jump li{margin:6px 0;font-size:16.5px}.hbx-jump a{color:#13233F}
+.hbx-shelfwrap{background:#0e2438;color:#dbe7f0;padding:26px 20px 30px;font:16px/1.5 Arial,sans-serif;margin-top:48px;position:relative;z-index:1}
+.hbx-shelfwrap .in{max-width:900px;margin:0 auto}
+.hbx-shelf{border:2px dashed #9fd0ee;border-radius:10px;padding:16px 18px}
+.hbx-cn-big{font:600 17px ui-monospace,Menlo,monospace;margin-bottom:12px;color:#fff}.hbx-cn-big b{color:#9fd0ee}
+.hbx-nav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.hbx-nav-btn{flex:1;min-width:220px;background:#12304a;border:1px solid #4d86ad;border-radius:8px;padding:12px 14px;color:#fff!important;text-decoration:none!important;font-size:16px}.hbx-nav-btn b{color:#9fd0ee;font-family:ui-monospace,Menlo,monospace}.hbx-off{opacity:.5}
+.hbx-list summary{cursor:pointer;font-weight:700;padding:6px 0}.hbx-list ol{list-style:none;margin:6px 0 0;padding:0}.hbx-list li{padding:6px 0;border-bottom:1px solid #2b4a63}.hbx-list a{color:#fff!important;text-decoration:none}
+.hbx-shelf-head{color:#9fd0ee;font:600 13px ui-monospace,Menlo,monospace;letter-spacing:.1em}.hbx-cn{font-family:ui-monospace,Menlo,monospace;color:#9fd0ee;margin-right:6px}
+.hbx-find{margin:14px 0 4px}.hbx-find label{display:block;font-weight:700;margin-bottom:6px}.hbx-find div{display:flex;gap:8px;flex-wrap:wrap}.hbx-find input{flex:1;min-width:0;width:100%;padding:12px 14px;font-size:17px;border:2px solid #4d86ad;border-radius:6px;color:#13233F;background:#fff}.hbx-find button{padding:12px 18px;font-size:16px;font-weight:700;background:#9fd0ee;color:#0e2438;border:0;border-radius:6px;cursor:pointer}
+.hbx-search{font-size:15px;margin-top:12px}.hbx-search a,.hbx-search b{color:#9fd0ee}
+.hbx-totop{display:none;position:fixed;right:16px;bottom:16px;z-index:50;background:#0e2438;color:#fff!important;border:2px solid #9fd0ee;border-radius:24px;padding:10px 16px;font:700 15px Arial,sans-serif;text-decoration:none!important;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.hbx-dates{font-family:ui-monospace,Menlo,monospace;font-size:13px}
+@media(max-width:600px){.hb-bar img{width:38px;height:38px}.hb-line-top{font-size:11.5px}}
+@media print{.hbx-tools,.hbx-totop{display:none}}
+/* Text sizes matched to the other Hive repos (Nov. 2, 2026) */
+body{font-size:19px}section p,section li,article p,article li,p.plain{font-size:19px!important}section td{font-size:17px!important}.card p{font-size:17px!important}.card .chk,.card .meta{font-size:13px!important}
+.hb-foot .hb-name{font-size:16px}
+.hbx-tools{margin-bottom:14px}
+.hbx-shelfwrap+.hb-foot{margin-top:0}
 </style>
 </head>
 <body>
-<div class="topbar"><span>Letters &amp; Essays to the Collective · The Weber County Hive + Utah Hive Politics</span><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener">webercountyhive.substack.com ↗</a></div>
+<div class="hbx-top"><div class="hb-bar"><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener"><img src="uhp-badge.png" alt="Utah Hive Politics logo"><span><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-line-top">The people's publication. We investigate what's best for the public as a whole, not any party or special interest.</span></span></a></div>
+<div class="hbx-slim"><span>Letters-Essays-to-the-Collective · LE 000.02</span><span><a href="index.html">← All letters &amp; essays</a> · <a href="https://weber-county-hive.github.io/-weber-county-hive-index/">← Hive library (every repo)</a></span></div></div>
 <header class="masthead">
   <div class="eyebrow">Guidelines</div>
   <h1 class="title">How to Send a <em>Letter or Essay</em></h1>
   <p class="dek">Short, signed and about public decisions. Here&rsquo;s what gets published and what doesn&rsquo;t.</p>
-  <div class="dates">Page published Sep 25, 2026 · Last updated <span class="upd">Sep 25, 2026</span></div>
+  <div class="dates">Page published Sep 25, 2026 · Last updated <span class="upd">Sep 25, 2026</span> · Page look updated Nov. 2, 2026</div>
 </header>
 <section>
   <p class="plain"><b>IN PLAIN WORDS</b>Write about a public decision, official, bill, budget or project. Sign it with your real name and city. Link any fact you state to where you found it. We check the facts and publish the rest in your words.</p>
@@ -84,18 +129,14 @@ footer.site-footer a:hover{color:#fff;}
   <div class="box"><h3>If you&rsquo;re the subject of a piece</h3><p style="margin:0;">You can reply the same way anyone else can, with a signed letter. It is checked and published on the same terms. Conversations about published pieces stay public.</p></div>
 </section>
 
-<footer class="site-footer"><div class="wrap">
-  <h3>Letters &amp; Essays to the Collective</h3><p style="color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;">From The Weber County Hive and Utah Hive Politics</p>
-  <p>Reader letters and essays about Utah government, money and land. The views are the writers&rsquo; own. Factual statements are checked against public records before publication, and each check is listed on the piece.</p>
-  <div class="site-links"><a href="index.html">All letters &amp; essays</a><a href="how-to-send.html">How to send one</a><a href="how-we-check.html">How we check</a></div>
-  <p style="margin-top:6px;">Across the Hive:</p>
-  <div class="site-links"><a href="https://weber-county-hive.github.io/-weber-county-hive-index/">Hive index</a><a href="https://weber-county-hive.github.io/candidates2026/">Candidates 2026</a><a href="https://weber-county-hive.github.io/Bill-Tracker/">Bill Tracker</a><a href="https://weber-county-hive.github.io/pac/">PACs</a><a href="https://weber-county-hive.github.io/Transparency/">Transparency</a><a href="https://weber-county-hive.github.io/Unelected-Power/">Unelected Power</a><a href="https://weber-county-hive.github.io/utah-senators/">Utah Senators</a><a href="https://weber-county-hive.github.io/audits/">Audits</a><a href="https://weber-county-hive.github.io/committees/">Committees</a><a href="https://weber-county-hive.github.io/bait-and-switch/">Bait and Switch</a><a href="https://weber-county-hive.github.io/public-lands/">Public Lands</a><a href="https://weber-county-hive.github.io/Education/">Education</a></div>
-</div></footer>
+<div class="hbx-shelfwrap"><div class="in"><div class="hbx-shelf" id="hbx-shelf"></div></div></div>
+<div class="hb-foot"><img src="hive-bee.png" alt=""><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-tag">Independent &middot; Accountability &middot; Journalism</span><p class="hb-line">The Weber County Hive and Utah Hive Politics: the people's publication. We investigate what's best for the public as a whole, not for any party or special interest group. We report public records. You decide.</p><p class="hb-tips"><a class="hb-btn" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html#send">Send a tip</a><a class="hb-btn hb-btn2" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html">Tips we checked</a><a class="hb-btn hb-btn2" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html#send">See a mistake? Tell us</a></p><p class="hb-small">Letters &amp; Essays to the Collective: reader letters and essays about Utah government, money and land. The views are the writers&rsquo; own. Factual statements are checked against public records before publication, and each check is listed on the piece.</p><p class="hb-small">We never name tipsters. When we correct a page, the fix and its date are shown on the page.</p><p class="hb-small"><a href="index.html">All letters &amp; essays</a> · <a href="how-to-send.html">How to send one</a> · <a href="how-we-check.html">How we check</a> · <a href="https://weber-county-hive.github.io/-weber-county-hive-index/">Master Index (Hive library)</a> · <a href="https://webercountyhive.substack.com/">Read on Substack</a></p><p class="hb-small">Across the Hive: <a href="https://weber-county-hive.github.io/-weber-county-hive-index/">Hive index</a> · <a href="https://weber-county-hive.github.io/candidates2026/">Candidates 2026</a> · <a href="https://weber-county-hive.github.io/Bill-Tracker/">Bill Tracker</a> · <a href="https://weber-county-hive.github.io/pac/">PACs</a> · <a href="https://weber-county-hive.github.io/Transparency/">Transparency</a> · <a href="https://weber-county-hive.github.io/Unelected-Power/">Unelected Power</a> · <a href="https://weber-county-hive.github.io/utah-senators/">Utah Senators</a> · <a href="https://weber-county-hive.github.io/audits/">Audits</a> · <a href="https://weber-county-hive.github.io/committees/">Committees</a> · <a href="https://weber-county-hive.github.io/bait-and-switch/">Bait and Switch</a> · <a href="https://weber-county-hive.github.io/public-lands/">Public Lands</a> · <a href="https://weber-county-hive.github.io/Education/">Education</a></p></div>
 <script src="collective-data.js?v=2"></script>
 <script>
 document.querySelectorAll('[data-site]').forEach(el=>{el.textContent=SITE[el.dataset.site];});
 
 </script>
+<script src="le-shelf.js?v=1"></script>
 <script data-goatcounter="https://weberhive.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
